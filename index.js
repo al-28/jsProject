@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     
     function check(choice) {
-        document.querySelectorAll('div').forEach(element => {
+        document.querySelectorAll('.res').forEach(element => {
             element.style.display = 'none';
         });
         let c = humanChoice(choice);
@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.querySelector('#reset').addEventListener('click', () => {
-        document.querySelectorAll('div').forEach(element => {
+        document.querySelectorAll('.res').forEach(element => {
             element.style.display = 'none';
         })
         document.getElementById('human').innerHTML = 0;
