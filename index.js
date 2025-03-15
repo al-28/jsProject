@@ -52,6 +52,9 @@ document.addEventListener('DOMContentLoaded', function() {
     }
 
     document.querySelector('#reset').addEventListener('click', () => {
+        document.querySelectorAll('div').forEach(element => {
+            element.style.display = 'none';
+        })
         document.getElementById('human').innerHTML = 0;
         document.getElementById('computer').innerHTML = 0;
     })
